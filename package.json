@@ -1,0 +1,21 @@
+{
+  "name": "pkrvcoffee",
+  "version": "1.0.0",
+  "description": "A PluralKit integration for Revolt (re)written in CoffeeScript!",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rm -rf target/plugin.tmp.js && coffee -o target/plugin.tmp.js -cb --no-header src/index.coffee && node scripts/generateManifest.js",
+    "verbosebuild": "rm -rf target/plugin.tmp.js && coffee -cbp --no-header src/index.coffee && coffee -o target/plugin.tmp.js -cb --no-header src/index.coffee && node scripts/generateManifest.js"
+  },
+  "keywords": [
+    "pluralkit",
+    "coffeescript",
+    "revolt",
+    "revite"
+  ],
+  "author": "Event Horizon Collective",
+  "license": "MIT",
+  "dependencies": {
+    "coffeescript": "^2.7.0"
+  }
+}
